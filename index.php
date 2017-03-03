@@ -31,7 +31,7 @@
           <tr>
               <th data-field="id">Name</th>
               <th data-field="name">Item Name</th>
-              <th data-field="price">Item Price</th>
+              <th data-field="price">Itezm Price</th>
           </tr>
         </thead>
 
