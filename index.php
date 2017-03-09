@@ -29,7 +29,7 @@
       <table class="bordered striped highlight centered responsive-table">
         <thead>
           <tr>
-              <th data-field="id">Namessss</th>
+              <th data-field="id">Name</th>
               <th data-field="name">Item Name</th>
               <th data-field="price">Itezm Price</th>
           </tr>
