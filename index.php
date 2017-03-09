@@ -30,8 +30,8 @@
         <thead>
           <tr>
               <th data-field="id">Name</th>
-              <th data-field="name">Item Name</th>
-              <th data-field="price">Itezm Price</th>
+              <th data-field="name">Nom de l'item</th>
+              <th data-field="price">Item Price</th>
           </tr>
         </thead>
 
