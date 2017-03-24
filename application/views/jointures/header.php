@@ -20,7 +20,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo $urlassets; ?>css/main.css">
 
-        <script src="<?php echo $urlassets; ?>js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -30,10 +29,15 @@
     <nav>
         <div class="nav-wrapper">
         <a href="#!" class="brand-logo responsive-img"><img width="170px" src="<?php echo $urlassets; ?>/images/logo.png"></a>
-        <ul class="right hide-on-med-and-down">
+         <a href="#" data-activates="mobile-noirmoutier" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down" data-activates="mobile-noirmoutier">
             <li><a href="<?php echo $urlsite; ?>accueil.php"><i class="material-icons left">home</i>Acceuil</a></li>
             <li><a href="<?php echo $urlsite; ?>recherche.php"><i class="material-icons left">search</i>Stage</a></li>
             <li><a class="waves-effect waves-light btn modal-trigger" data-target="#modalsign" href="#modalsign">Login/Sign up</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-noirmoutier">
+            <li><a href="<?php echo $urlsite; ?>">Acceuil</a></li>
+            <li><a href="<?php echo $urlsite; ?>recherche.php">Stage</a></li>
         </ul>
         </div>
     </nav>
