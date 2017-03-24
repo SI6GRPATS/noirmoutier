@@ -4066,8 +4066,11 @@ nav .brand-logo {
   color: #fff;
   display: inline-block;
   font-size: 2.1rem;
-  padding: 0;
   white-space: nowrap;
+}
+
+.logonm {
+  padding-left: 0.3em;
 }
 
 nav .brand-logo.center {

@@ -29,7 +29,7 @@
 
     <nav>
         <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#!" class="brand-logo responsive-img"><img width="170px" src="<?php echo $url; ?>/images/logo.png"></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="<?php echo $urlsite; ?>accueil.php"><i class="material-icons left">home</i>Acceuil</a></li>
             <li><a href="<?php echo $urlsite; ?>recherche.php"><i class="material-icons left">search</i>Stage</a></li>
