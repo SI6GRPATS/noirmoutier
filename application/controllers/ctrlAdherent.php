@@ -8,13 +8,14 @@ fichier : application/controllers/ctrlAdherent.php*/
             
         
 
-                if($mail != "" && $mdp != ""){
+                if(isset($mail) && isset($mdp) && $mail != "" && $mdp != ""){
                         $this->load->database('noirmoutier');
 
                         $adherent = $this->noirmoutier_model->connectionAdherent($mail,$mdp);
 
-                        if(count($adherent) != 0){
-                           
+                        if(count($adherent) !== false){
+                            session_start();
+                            $_SESSION = $adherent;
                             $this->load->view('acceuil') ;
                         }
                         else{
