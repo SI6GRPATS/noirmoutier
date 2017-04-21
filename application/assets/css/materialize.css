@@ -4788,7 +4788,6 @@ small {
   overflow-y: hidden;
   height: 48px;
   width: 100%;
-  background-color: #fff;
   margin: 0 auto;
   white-space: nowrap;
 }
@@ -5413,6 +5412,14 @@ button.btn-floating {
     width: 80%;
   }
 }
+
+.title-modal {
+  color : #aaa;
+}
+.input-options {
+  color : #333 !important;
+}
+
 
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
