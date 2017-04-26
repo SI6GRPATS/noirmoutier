@@ -4062,6 +4062,7 @@ nav .button-collapse i {
 }
 
 nav .brand-logo {
+  width : 3.3em !important;
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -4071,6 +4072,8 @@ nav .brand-logo {
 
 .logonm {
   padding-left: 0.3em;
+  padding-top:0.1em;
+  width : 3.6em !important;
 }
 
 nav .brand-logo.center {

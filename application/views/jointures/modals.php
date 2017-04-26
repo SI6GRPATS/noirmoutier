@@ -1,6 +1,6 @@
 <?php
 
-  if(isset($_POST["mail"])){
+  if(isset($_SESSION["logged"])  == TRUE ){
 
 ?>
  <!-- Modal Structure -->

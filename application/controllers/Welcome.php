@@ -24,5 +24,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('jointures/header');
 		$this->load->view('accueil');
 		$this->load->view('jointures/footer');
+		$this->load->view('jointures/modals');
 	}
 }

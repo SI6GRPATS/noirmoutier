@@ -28,7 +28,7 @@
 
     <nav>
         <div class="nav-wrapper">
-        <a href="#!" class="brand-logo responsive-img"><img width="170px" src="<?php echo $urlassets; ?>/images/logo.png"></a>
+        <a href="#!" class="brand-logo responsive-img"><img class="logonm" src="<?php echo $urlassets; ?>/images/logo.png"></a>
          <a href="#" data-activates="mobile-noirmoutier" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down" data-activates="mobile-noirmoutier">
             <li><a href="<?php echo site_url('Accueil') ?>"><i class="material-icons left">home</i>Accueil</a></li>
