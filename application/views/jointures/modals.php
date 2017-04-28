@@ -6,7 +6,7 @@
  <!-- Modal Structure -->
   <div id="modalsign" class="modal">
     <div class="modal-content">
-      <h4>Mon compte <?php $_SESSION["mail"] ?></h4> 
+      <h4>Mon compte</h4> 
       <p>A bunch of text</p>
     </div>
     <div class="modal">
@@ -49,8 +49,22 @@
       <center><h4 class="title-modal">S'enrengistrer</h4></center>
 
       <form action="" method="post">
-        <input type="text" name="mail" placeholder="addresse email">
-        <input type="password" name="mdp" placeholder="mot de passe">
+        <div class="row">
+          <input type="text" name="nom" placeholder="Nom" class="col l5">
+          <input type="text" name="prenom" placeholder="Prénom" class="col l5 offset-l2">
+        </div>
+        <div class="row">
+          <input type="text" name="mail" placeholder="Addresse email" class="col l5">
+          <input type="password" name="mdp" placeholder="Mot de passe" class="col l5 offset-l2">
+        </div>
+        <div class="row">
+          <input type="text" name="numrue" placeholder="Numéro de rue" class="col l5">
+          <input type="password" name="adresse" placeholder="Adresse" class="col l5 offset-l2">
+        </div>
+        <div class="row">
+          <input type="text" name="departement" placeholder="Département" class="col l5">
+          <input type="password" name="commune" placeholder="Commune" class="col l5 offset-l2">
+        </div>
         <button type="submit" class="btn-large red" value="Submit">Submit</button>
       </form>
     </div>

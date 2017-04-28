@@ -14,18 +14,23 @@
 			<div class="input-field col s6">
 				<select>
 				<option value="" disabled selected>Sport</option>
-				<option value="1">HandBall</option>
-				<option value="2">Football</option>
-				<option value="3">basket</option>
+				<option value="1">Tennis</option>
+				<option value="2">Volley-Ball</option>
+				<option value="3">Hand-Ball</option>
+				<option value="2">Basket-Ball</option>
+				<option value="3">Saut en hauteur</option>
+				<option value="2">Aviron</option>
+				<option value="3">Canne de combat</option>
+				
 				</select>
 				<label>Choisir sont sport</label>
 			</div>
 			<div class="input-field col s6">
 				<select>
 				<option value="" disabled selected>Niveaux</option>
-				<option value="1">Pro</option>
-				<option value="2">Semi-pro</option>
-				<option value="3">Amateur</option>
+				<option value="1">Débutant</option>
+				<option value="2">Intermédiaire</option>
+				<option value="3">Professionnelle</option>
 				</select>
 				<label>Choisir sont niveau</label>
 			</div>
