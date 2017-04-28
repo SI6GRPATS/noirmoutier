@@ -14,7 +14,7 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Condition d'utilisation</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Mon Compte</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Se Login</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Se Connecter</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Les stages</a></li>
                 </ul>
               </div>
