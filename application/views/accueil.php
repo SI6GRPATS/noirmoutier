@@ -1,14 +1,40 @@
-<html>
-	<head>
-		<title>Accueil Noirmoutier
-		</title>
-	</head>
-	<body>
-       	<div class="row">
-		   <br>
-              <center><h1>Page Accueil</h1></center>
-          </div>
+
+		<div class="slider">
+			<ul class="slides">
+			<li>
+				<img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+				<div class="caption center-align">
+				<h3>This is our big Tagline!</h3>
+				<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+			<li>
+				<img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+				<div class="caption left-align">
+				<h3>Left Aligned Caption</h3>
+				<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+			<li>
+				<img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+				<div class="caption right-align">
+				<h3>Right Aligned Caption</h3>
+				<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+			<li>
+				<img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+				<div class="caption center-align">
+				<h3>This is our big Tagline!</h3>
+				<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+			</ul>
+		</div>
       </div>
+	  <br />
+	  <br />
+	  <br />
 	  <div class="container">
 		<div class="row">
 			<div class="input-field col s6">
@@ -23,7 +49,7 @@
 				<option value="3">Canne de combat</option>
 				
 				</select>
-				<label>Choisir sont sport</label>
+				<label>Choisir son sport</label>
 			</div>
 			<div class="input-field col s6">
 				<select>
@@ -32,7 +58,7 @@
 				<option value="2">Intermédiaire</option>
 				<option value="3">Professionnelle</option>
 				</select>
-				<label>Choisir sont niveau</label>
+				<label>Choisir son niveau</label>
 			</div>
 		</div>
 
