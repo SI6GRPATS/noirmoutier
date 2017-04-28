@@ -22,7 +22,7 @@
             //$connexion = connexionBD() ;
             
             //if($connexion !== FALSE){
-                $requete  = "select nom,prenom" ;
+        $requete  = "select nom,prenom" ;
 		$requete .= " from Citoyen" ;
 		$requete .= " and mail = '".$mail."'" ;
 		$requete .= " and mdp = '".$mdp."'" ;
