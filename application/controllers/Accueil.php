@@ -21,8 +21,10 @@ class Accueil extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper('url');
+		$this->load->model('Noirmoutier_model');
+		$data['sports'] = $this->Noirmoutier_model->listSports();
 		$this->load->view('jointures/header');
-		$this->load->view('accueil');
+		$this->load->view('accueil',$data);
 		$this->load->view('jointures/footer');
 		$this->load->view('jointures/modals');
 	}

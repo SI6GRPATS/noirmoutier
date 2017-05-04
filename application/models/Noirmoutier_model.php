@@ -1,6 +1,6 @@
 //aplication/models/Normoutier_model.php
 <?php
-    class Noirmouier_model extends CI_Model {
+    class Noirmoutier_model extends CI_Model {
         
         public function __construct() {
             parent::__construct();
@@ -46,5 +46,12 @@
 		return FALSE ;
             }*/
         }
-        
+
+	public function listSports(){
+	
+		$query = $this->db->query('SELECT libelle FROM Sport');
+
+		return $query->result();
+	
+	}	
     }
