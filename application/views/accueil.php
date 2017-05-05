@@ -40,17 +40,14 @@ $urlassets = base_url('application/assets/');
 	  <div class="container">
 		<div class="row">
 			<div class="input-field col s6">
-				<select>
-				<option value="" disabled selected>Sport</option>
-				<option value="1">Tennis</option>
-				<option value="2">Volley-Ball</option>
-				<option value="3">Hand-Ball</option>
-				<option value="2">Basket-Ball</option>
-				<option value="3">Saut en hauteur</option>
-				<option value="2">Aviron</option>
-				<option value="3">Canne de combat</option>
-				
-				</select>
+				<select class="form-control">
+					<option value="" disabled selected>Sport</option>
+					<?php 
+					foreach($sports as $row){ 
+					echo '<option value="'.$row->libelle.'">'.$row->libelle.'</option>';
+					}
+					?>
+            	</select>
 				<label>Choisir son sport</label>
 			</div>
 			<div class="input-field col s6">
