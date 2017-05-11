@@ -20,7 +20,6 @@ class Accueil extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('Noirmoutier_model');
 		$this->load->view('jointures/header');
 		$this->load->view('accueil');
 		$this->load->view('jointures/footer');

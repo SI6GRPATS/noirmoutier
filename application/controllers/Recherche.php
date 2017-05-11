@@ -20,7 +20,7 @@ class Recherche extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->helper('url');
+		
 		$this->load->view('jointures/header');
 		$data['gettab'] = $this->Noirmoutier_model->listSports();
 		$data['sports'] = $this->Noirmoutier_model->listSports();

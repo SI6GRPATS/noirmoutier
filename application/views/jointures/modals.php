@@ -35,11 +35,12 @@
       <br>
       <center><h4 class="title-modal">Se connecter</h4></center>
       <div class="row">
-        <form action="" method="post">
-          <input class="input-options col l5 offset-l1" type="text" name="mail" placeholder="adresse email" style="color: black !important;">
-          <input class="input-options col l5 offset-l1" type="password" name="mdp" placeholder="mot de passe">
-          <center><button type="submit" class="btn-large red" value="Submit">Submit</button></center>
-        </form>
+         <?php echo validation_errors(); ?>
+       <?php echo form_open('verifyLogin'); ?> 
+          <input class="input-options col l5 offset-l1" type="text" name="username" placeholder="adresse email" style="color: black !important;">
+          <input class="input-options col l5 offset-l1" type="password" name="password" placeholder="mot de passe">
+          <center><button type="submit" class="btn-large red" value="Login">Submit</button></center>
+        </form> 
       </div>
     </div>
     </div>
@@ -51,8 +52,8 @@
 
       <form action="" method="post">
         <div class="row">
-          <input type="text" name="nom" placeholder="Nom" class="col l5">
-          <input type="text" name="prenom" placeholder="Prénom" class="col l5 offset-l2">
+          <input type="text" name="username" placeholder="Nom" class="col l5">
+          <input type="text" name="password" placeholder="Prénom" class="col l5 offset-l2">
         </div>
         <div class="row">
           <input type="text" name="mail" placeholder="Addresse email" class="col l5">
