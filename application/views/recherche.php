@@ -1,81 +1,81 @@
+<?php
+$urlassets = base_url('application/assets/');
 
-       	<div class="row">
-		   <br>
-              <center><h1>Page Recherche de stage</h1></center>
-          </div>
+if($_GET){
+	$data = array('gettab'=>array('sport'=>$_GET['sports'],'niveau'=>$_GET['niveau']));
+	print_r($data);
+}
+
+?>
       </div>
+	  <br />
+	  <br />
+	  <br />
 	  <div class="container">
+		<form method="GET" action="">
 		<div class="row">
 			<div class="input-field col s6">
-				<select>
-				<option value="" disabled selected>Sport</option>
-				<option value="1">Tennis</option>
-				<option value="2">Volley-Ball</option>
-				<option value="3">Hand-Ball</option>
-				<option value="2">Basket-Ball</option>
-				<option value="3">Saut en hauteur</option>
-				<option value="2">Aviron</option>
-				<option value="3">Canne de combat</option>
-				
-				</select>
+				<select name="sports">
+					<option value="" disabled selected>Sport</option>
+					<?php 
+						foreach($sports as $row){ 
+							?>
+								<option value="<?php echo $row->libelle; ?>"><?php echo $row->libelle; ?></option>
+							<?php
+						}
+					?>
+            	</select>
 				<label>Choisir son sport</label>
 			</div>
 			<div class="input-field col s6">
-				<select>
-				<option value="" disabled selected>Niveaux</option>
-				<option value="1">Débutant</option>
-				<option value="2">Intermédiaire</option>
-				<option value="3">Professionnelle</option>
+				<select name="niveau">
+					<option value="" disabled selected>Niveau</option>
+					<?php 
+						foreach($niveaux as $row){ 
+							?>
+								<option value="<?php echo $row->niveau; ?>"><?php echo $row->niveau; ?></option>
+							<?php
+						}
+					?>
 				</select>
 				<label>Choisir son niveau</label>
 			</div>
 		</div>
 
 		<div class="row">
-			<center><a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Chercher</a></center>
+			<center><button value="submit" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Chercher</button></center>
 		</div>
+		</form>
 
 		<div class="row">
 			<table class="bordered striped highlight centered responsive-table">
 				<thead>
 				<tr>
-					<th>Stage</th>
+					<th>Salle</th>
+					<th>Lieu</th>
+					<th>Sport</th>
+					<th>Niveau</th>
 					<th>Début</th>
 					<th>Fin</th>
-					<th>Salle</th>
 					<th>S'inscrire</th>
 				</tr>
 				</thead>
 
 				<tbody>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
+					<?php 
+						foreach($stages as $row){
+							?>
+							<tr>
+								<td> <?php echo $row->nomSalle; ?> </td>
+								<td> <?php echo $row->lieuSalle; ?> </td>
+								<td> <?php echo $row->libelle; ?> </td>
+								<td> <?php echo $row->niveau; ?> </td>
+								<td> <?php echo $row->dateDebut; ?> </td>
+								<td> <?php echo $row->dateFin; ?> </td>
+								<td><a href="#"><i class="material-icons">add</i></a></td>
+							<?php
+						}
+					?>
 				</tbody>
 			</table>
 		</div>

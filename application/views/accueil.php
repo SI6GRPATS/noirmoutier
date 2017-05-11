@@ -37,76 +37,84 @@ $urlassets = base_url('application/assets/');
 	  <br />
 	  <br />
 	  <br />
-	  <div class="container">
-		<div class="row">
-			<div class="input-field col s6">
-				<select class="form-control">
-					<option value="" disabled selected>Sport</option>
-					<?php 
-					foreach($sports as $row){ 
-					echo '<option value="'.$row->libelle.'">'.$row->libelle.'</option>';
-					}
-					?>
-            	</select>
-				<label>Choisir son sport</label>
-			</div>
-			<div class="input-field col s6">
-				<select>
-				<option value="" disabled selected>Niveaux</option>
-				<option value="1">Débutant</option>
-				<option value="2">Intermédiaire</option>
-				<option value="3">Professionnelle</option>
-				</select>
-				<label>Choisir son niveau</label>
-			</div>
-		</div>
+	<div class="row">
+  <div class="col l12">
+    <center>
+      <br>
+      <br>
 
-		<div class="row">
-			<center><a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Chercher</a></center>
-		</div>
+    <div class="col l3 s6">
+      <div class="row">
+        <div class="col s12 ">
+          <a href="#modalsign">
+          <div class="card">
+            <div class="card-image">
+              <img class="inkwell mg-image" src="https://media-cdn.tripadvisor.com/media/photo-s/04/81/c3/1a/camping-indigo-noirmoutier.jpg">
+              <span class="card-title home"><b>Se connecter</b></span>
+            </div>
+            <div class="card-action">
+              <span style="color:#525252;">Se connecter au site de noirmoutier</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-		<div class="row">
-			<table class="bordered striped highlight centered responsive-table">
-				<thead>
-				<tr>
-					<th>Stage</th>
-					<th>Début</th>
-					<th>Fin</th>
-					<th>Salle</th>
-					<th>S'inscrire</th>
-				</tr>
-				</thead>
+    <div class="col l3 s6">
+      <div class="row">
+        <div class="col s12 ">
+          <a href="#modalsign">
+          <div class="card">
+            <div class="card-image">
+              <img class="inkwell mg-image" src="http://img.over-blog-kiwi.com/1/48/91/50/20150305/ob_0e7aab_noirmoutier-43.jpg">
+              <span class="card-title home"><b>S'enrengistrer</b></span>
+            </div>
+            <div class="card-action">
+              <span style="color:#525252;">S'enrengistrer au site de noirmoutier</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
 
-				<tbody>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				<tr>
-					<td>Academic football</td>
-					<td>17/07/17</td>
-					<td>30/08/17</td>
-					<td>Jean Jaures</td>
-					<td><a href="#"><i class="material-icons">add</i></a></td>
-				</tr>
-				</tbody>
-			</table>
-		</div>
-	  </div>
+                <div class="col l3 s6">
+      <div class="row">
+        <div class="col s12 ">
+          <a href="http://localhost/noirmoutier/index.php/Recherche">
+          <div class="card">
+            <div class="card-image">
+              <img class="inkwell mg-image" src="http://www.vendee-tourisme.com/media/baladeaveloiledenoirmoutier__067357000_1115_06032014.jpg">
+              <span class="card-title home"><b>Recherche</b></span>
+            </div>
+            <div class="card-action">
+              <span style="color:#525252;">Rechercher des stages dans la commune de noirmoutier</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col l3 s6">
+      <div class="row">
+        <div class="col s12 ">
+          <a href="#moncompte">
+          <div class="card">
+            <div class="card-image">
+              <img class="inkwell mg-image" src="http://www.vendee-tourisme.com/media/lemoulindelagueriniereiledenoirmoutier__063619400_1128_20032014.jpg">
+              <span class="card-title home"><b>Profil</b></span>
+            </div>
+            <div class="card-action">
+              <span style="color:#525252;">Visualiser votre profile et les stages inscrit</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+	</div>
+  </center>
+</div>

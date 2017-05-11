@@ -22,7 +22,11 @@ class Recherche extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->view('jointures/header');
-		$this->load->view('recherche');
+		$data['gettab'] = $this->Noirmoutier_model->listSports();
+		$data['sports'] = $this->Noirmoutier_model->listSports();
+		$data['niveaux'] = $this->Noirmoutier_model->listNiveaux();
+		$data['stages'] = $this->Noirmoutier_model->listStages();
+		$this->load->view('recherche',$data);
 		$this->load->view('jointures/footer');
 		$this->load->view('jointures/modals');
 	}

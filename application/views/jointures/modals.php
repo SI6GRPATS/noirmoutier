@@ -17,7 +17,7 @@
   }else {
 ?>
  <!-- Modal Structure -->
-  <div id="modalsign" class="modal" style="width:40%;">
+  <div id="modalsign" class="modal" style="width:70%;">
     <div class="modal-content">
       
   <div class="row">
@@ -34,12 +34,13 @@
     <div class="row">
       <br>
       <center><h4 class="title-modal">Se connecter</h4></center>
-
-      <form action="" method="post">
-        <input class="input-options" type="text" name="mail" placeholder="adresse email">
-        <input class="input-options" type="password" name="mdp" placeholder="mot de passe">
-        <button type="submit" class="btn-large red" value="Submit">Submit</button>
-      </form>
+      <div class="row">
+        <form action="" method="post">
+          <input class="input-options col l5 offset-l1" type="text" name="mail" placeholder="adresse email" style="color: black !important;">
+          <input class="input-options col l5 offset-l1" type="password" name="mdp" placeholder="mot de passe">
+          <center><button type="submit" class="btn-large red" value="Submit">Submit</button></center>
+        </form>
+      </div>
     </div>
     </div>
 
@@ -69,6 +70,22 @@
       </form>
     </div>
  </div>
+      
+    </div>
+    <div class="modal">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+
+  <div id="moncompte" class="modal" style="width:40%;">
+    <div class="modal-content">
+      
+
+      <center><h4 class="title-modal">Mon Compte</h4></center>
+
+    
       
     </div>
     <div class="modal">

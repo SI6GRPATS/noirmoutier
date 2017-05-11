@@ -1,4 +1,3 @@
-//aplication/models/Normoutier_model.php
 <?php
     class Noirmoutier_model extends CI_Model {
         
@@ -53,5 +52,23 @@
 
 		return $query->result();
 	
-	}	
-    }
+	}
+
+    public function listNiveaux(){
+	
+		$query = $this->db->query('SELECT niveau FROM Niveau');
+
+		return $query->result();
+	
+	}
+
+    public function listStages(){
+	
+		$query = $this->db->query('SELECT * FROM Stage INNER JOIN Sport ON Stage.idSport = Sport.id INNER JOIN Niveau ON Stage.idNiveauStage = Niveau.id ORDER BY nomSalle desc');
+
+		return $query->result();
+	
+	}
+
+
+}
