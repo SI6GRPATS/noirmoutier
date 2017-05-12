@@ -24,5 +24,42 @@ class Accueil extends CI_Controller {
 		$this->load->view('jointures/footer');
 		$this->load->view('jointures/modals');
 	}
+	public function connection() {
+            $mail = $this->input->get('mail');
+            $mdp = $this->input->get('mdp');
+
+            $resultat = $this->Noimoutier_model->connectionCitoyen($mail,$mdp);
+            if($resultat==TRUE){
+                $nom = $this->Noimoutier_model->getNomAdhrent($mail);
+                start_session ;
+                $_SESSION['Auth']['nom']=$nom;
+                $this->load->view('accueil.php');
+            }
+	    else{
+                $this->load->view('');
+            }
+        }
+        
+        public function inscription(){
+        
+		$nom=$this->input->get('nom');
+		$prenom=$this->input->get('prenom');
+		$mail=$this->input->get('mail');
+		$mdp=$this->input->get('mdp');
+		$num=$this->input->get('numRue');
+		$adresse=$this->input->get('adresse');
+		$dept=$this->input->get('dept');
+		$commune=$this->input->get('commune');
+
+
+		$newCitoyen=$this->Noirmoutier_model->addCitoyen($nom,$prenom,$mail,$mdp,$num,$adresse,$dept,$commune);
+
+		if($newCitoyen){
+		    $this->load->view('acceuil.php');
+
+		}
+		else{
+		     $this->load->view('');
+		}
 }
 
