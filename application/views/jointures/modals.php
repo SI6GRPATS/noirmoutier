@@ -67,10 +67,6 @@
           <input type="text" name="departement" placeholder="Département" class="col l5">
           <input type="password" name="commune" placeholder="Commune" class="col l5 offset-l2">
         </div>
-        <div class="row">
-          <input type="text" name="sport" placeholder="Sport" class="col l5">
-          <input type="text" name="niveau" placeholder="Nivrau Sport" class="col l5 offset-l2">
-        </div>
         <button type="submit" class="btn-large red" value="Submit">Submit</button>
       </form>
     </div>
