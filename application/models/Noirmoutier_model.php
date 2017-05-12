@@ -18,7 +18,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             return $connexion ;
         }
         */
-        
+        public function connectionCitoyen($mail,$mdp) {
+            if($this->db->select('mdp')
+               ->where(array ('mail'=>$mail,'mdp'=>$mdp))
+               ->get('Citoyen')->num_rows() == 1) {
+            	return TRUE;
+            } 
+            else  {
+            return FALSE; 
+            } 
+        }
+	
+	public function getNomAdhrent($mail) {
+           $nom = $this->db->select('nom')->where(array('mail'=>$mail));
+            return $nom ;
+        }
+	
+	public function addCitoyen($nom,$prenom,$mail,$mdp,$num,$adresse,$dept,$commune){
+    
+                $addCitoyen = array(
+                     'nom' => '$nom',
+                     'prenom' => '$prenom',
+                     'mail' => '$mail',
+                     'mdp' => '$mdp',
+                     'numRue'=>'$num',
+                     'adresse'=>'$adresse',
+                     'departement'=>'$dept',
+                     'commune'=>'$commune'
+             );
+             $verifInsertCitoyen=$this->db->insert('Citoyen', $addCitoyen);
+
+             if($verifInsertCitoyen){
+                 return true;
+             }else{
+                 return false;
+             }
 
         function login($username, $password){
             
