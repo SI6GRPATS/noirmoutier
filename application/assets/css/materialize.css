@@ -5424,6 +5424,8 @@ button.btn-floating {
 }
 
 
+
+
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
@@ -8592,4 +8594,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #777;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #777;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #777;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #777;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #777;
 }

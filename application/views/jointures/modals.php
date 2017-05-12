@@ -1,5 +1,5 @@
 <?php
-
+$urlassets = base_url('application/assets/');
   if(isset($_SESSION["logged"])  == TRUE ){
 
 ?>
@@ -37,8 +37,8 @@
       <div class="row">
          <?php echo validation_errors(); ?>
        <?php echo form_open('verifyLogin'); ?> 
-          <input class="input-options col l5 offset-l1" type="text" name="username" placeholder="adresse email" style="color: black !important;">
-          <input class="input-options col l5 offset-l1" type="password" name="password" placeholder="mot de passe">
+          <input class="input-options col l5 validate" type="email" name="email" placeholder="adresse email" style="color: black !important;">
+          <input class="input-options col l5 offset-l2 validate" type="password" name="password" placeholder="mot de passe">
           <center><button type="submit" class="btn-large red" value="Login">Submit</button></center>
         </form> 
       </div>
@@ -77,12 +77,12 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
+</div>
 
 
-
-  <div id="moncompte" class="modal" style="width:40%;">
+  <div id="moncompte" class="modal" style="width:50%;">
     <div class="modal-content">
-      
+      <center><img class="responsive-img logonm" src="<?php echo $urlassets; ?>images/avatar.png"></center>
 
       <center><h4 class="title-modal">Mon Compte</h4></center>
 
